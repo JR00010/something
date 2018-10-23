@@ -1,0 +1,7 @@
+1.一1.某个字段分库的表在不支持分布式事务的条件下执行sql，如果没有带查询分库字段的条件查询，则会报错
+	如：
+		UPDATE tm_custom_data_gdesc SET GDESC_EN = 'abc' WHERE BNO = '425586293618' and IE_FLAG = 'I'
+		会报错 ，因为这 tm_custom_data_gdesc 这个表的分库原则是 按 PORT_CODE 这个字段分库 
+		UPDATE tm_custom_data_gdesc SET GDESC_EN = 'abc' WHERE BNO = '425586293618' and IE_FLAG = 'I' and 
+			PORT_CODE = 'XMN' 运行正常
+			
