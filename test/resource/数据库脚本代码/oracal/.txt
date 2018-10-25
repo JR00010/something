@@ -1,0 +1,13 @@
+1. oracal 信息的查询  
+	相关表字段的查询,这个方式会把视图的相关信息页查询出来
+		select *  from user_tab_columns where  table_Name = 'XX'
+	获取表注释：
+		select * from user_tab_comments where table_Name ='XXX' 
+	获取字段的注释：
+		select *  from user_col_comment where table_name ='XXX'
+	获取用户表的信息 ，不会查询视图信息
+		select * from user_tables  
+	获取数据库所有的表
+		select * from all_tables
+	
+	

@@ -12,7 +12,7 @@ DECLARE
   	num   number;
   	newLength NUMBER := 31;
   BEGIN  
-   DBMS_OUTPUT.ENABLE(1000000);
+   DBMS_OUTPUT.ENABLE(1000000); -- 设置缓存大小，缓存太小 会报错。
    select count(1) INTO num from user_tables where table_name = upper('temp_BNO') ;
    if num > 0 then
      execute immediate 'drop table temp_BNO' ;
