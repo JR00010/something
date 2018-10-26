@@ -1,0 +1,6 @@
+全局表 
+	mycat_config create table test global = true primarykey = 'id' datanode = 'test$1-4'
+	注：全局表 写分片规则 ，在插入数据的时候会在所有库中的表中插入数据，所以叫全局表
+分片表
+	mycat_confing create table test global =false  primarykey = 'id' datanode ='test$1-4'  rule='model-4'
+	注：分片表建表写分片规则 ，在插入数据的时候 会按分片规则在对应的分库中插入数据 ，不会把数据插入所有分库表中。
