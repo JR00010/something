@@ -6,9 +6,6 @@ public class PathClassLoader extends ClassLoader{
 		this.classPath = classPath;
 	}
 	protected Class<?> findClass(String name) {
-		if(pakegeName.startWith(name)	{
-			
-		})
 		return null;
 	}
 }
