@@ -1,5 +1,6 @@
 package test.com.test;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -14,6 +15,19 @@ import javax.swing.plaf.synth.SynthStyle;
 
 public class Test {
 	public static void main(String[] args) {
+		Set<String> set = new HashSet<>();
+		set.add("12");
+		set.add("wee");
+		System.out.println(set.toString());
+		String  bno = "12382";
+		System.err.println(bno.split("|")[0]);
+		String MSG_FOR_XMN_CUSTOMS_CERTIFICATION = "尊敬的客户，您好！您的运单号:{{bno}}，经厦门办理通关手续，为了有效保护您的身份信息仅被您本人使用"
+				+ "，厦门海关推行“互联网+身份认证”监管要求，故需您下载单一窗口身份验证APP进行认证，app下载网址：http://t.cn/RdV5pJr "
+				+ "，请按相关指引向海关提交个人身份电子信息（网址：http://t.cn/RDiHuwl）。如有疑问，可拨打顺丰关务客服热线0592-5651092咨询"
+				+ "，谢谢！温馨提醒：如您使用苹果手机，安装完成后，请打开设置-通用-设备管理-点击企业级应用-Tendyron Corporation-信任";
+		BigDecimal d =  new BigDecimal("1.2");
+		System.err.println(MSG_FOR_XMN_CUSTOMS_CERTIFICATION.replace("{{bno111}}", "******"));
+		
 //		System.err.println(ResourceBundle.getBundle("test.txt").getString("1"));
 //		System.err.println(String.format("{}131", 5));
 		 String str=null;

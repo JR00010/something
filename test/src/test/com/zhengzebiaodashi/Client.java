@@ -12,5 +12,7 @@ public class Client {
 		String s = "070036987522,856230644535,856230647555256asasas";
 		String[] sw= s.split("\n", s.length());
 		System.err.println(Arrays.toString(sw));
+		
+		System.err.println("sf1236352152596".matches("^(SF|sf|[0-9])[0-9]*"));
 	}
 }
