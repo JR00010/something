@@ -1,0 +1,9 @@
+一、小程序的脚本语言 ：
+	两种方式  ：
+		1.在WXML文件中  使用 标签 <wxs>   
+			标签 属性： mould 和   src 
+		2.使用  文件 的 形式  ，文件后缀为 
+			导出：module.export = {}
+			导入WXML使用标签 <wxs>
+		3.其他语法参照 JavaScript 中 语法。
+		
