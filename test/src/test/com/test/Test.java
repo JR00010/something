@@ -1,6 +1,7 @@
 package test.com.test;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -13,8 +14,10 @@ import java.util.function.Supplier;
 
 import javax.swing.plaf.synth.SynthStyle;
 
+
 public class Test {
 	public static void main(String[] args) {
+		List<String>  dsd = new ArrayList<>();
 		Set<String> set = new HashSet<>();
 		set.add("12");
 		set.add("wee");
@@ -165,4 +168,5 @@ public class Test {
 		System.err.println(str.length());
 		return str.length();
 	}
+	
 }

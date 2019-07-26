@@ -1,0 +1,3 @@
+ThreadPoolExecutor ：
+	1.当线程池饱和时，即线程池的工作队列和线程数达到最大的时候 ，用户提交的任务将拒绝。   不过ThreadPoolExecutor  构造函数提供了当被拒绝时
+		要处理的回调接口， RejectedExecutionHandler 

@@ -1,0 +1,6 @@
+1.清除表格选中的数据
+	this.$refs.listLawTab.clearSelection();
+2.匹配选中
+	_this.$nextTick(function(){
+		_this.$refs.listLawTab.toggleRowSelection(选中的数据【i】,true);
+	})

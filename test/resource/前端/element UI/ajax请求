@@ -1,0 +1,6 @@
+vue  中的ajax 请求 发现三种形式
+	1.this.$http.post(...).then(...)
+	2.引入：import axios from 'axios' 
+		axios({...})then(...)
+	3.未知：this.$httpExt().post(...)
+	

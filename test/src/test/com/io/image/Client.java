@@ -3,6 +3,10 @@ package test.com.io.image;
 import java.io.File;
 import java.io.IOException;
 
+import com.qcloud.image.ImageClient;
+import com.qcloud.image.common_utils.CommonFileUtils;
+import com.qcloud.image.request.IdcardDetectRequest;
+
 
 public class Client {
 	public static void main(String[] args) throws IOException {
@@ -11,3 +15,5 @@ public class Client {
 		System.err.println(path);
 	}
 }
+
+

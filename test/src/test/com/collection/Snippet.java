@@ -2,40 +2,49 @@ package test.com.collection;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
+
 public class Snippet {
 	public static void main(String[] args) {
-		IConvert<String, Matchs> convert = Matchs::new;
-		List<Matchs> matchsList = new ArrayList<Matchs>();
-		new Matchs("li",9);
-		matchsList.add(new Matchs("li",7));
-		matchsList.add(new Matchs("ni",10));
-		matchsList.add(new Matchs("li",9));
-		matchsList.add(new Matchs("li",6));
-		matchsList.add(new Matchs("ni",5));
-		IConvert<Comparator<Matchs>, TreeMap> d= TreeMap::new;
-		TreeMap<String, List<Matchs>> matchsListMap = matchsList.stream()
-				.collect(Collectors.groupingBy(Matchs::getName,TreeMap::new,Collectors.toList()));
-		System.err.println(matchsListMap.toString());
-		
-		Set<Matchs> s = new HashSet<>();
-		TreeSet<Matchs> s1 = new TreeSet<>();
+//		IConvert<String, Matchs> convert = Matchs::new;
+//		List<Matchs> matchsList = new ArrayList<Matchs>();
+//		new Matchs("li",9);
+//		matchsList.add(new Matchs("li",7));
+//		matchsList.add(new Matchs("ni",10));
+//		matchsList.add(new Matchs("li",9));
+//		matchsList.add(new Matchs("li",6));
+//		matchsList.add(new Matchs("ni",5));
+//		IConvert<Comparator<Matchs>, TreeMap> d= TreeMap::new;
+//		TreeMap<String, List<Matchs>> matchsListMap = matchsList.stream()
+//				.collect(Collectors.groupingBy(Matchs::getName,TreeMap::new,Collectors.toList()));
+//		System.err.println(matchsListMap.toString());
+//		
+//		Set<Matchs> s = new HashSet<>();
+//		TreeSet<Matchs> s1 = new TreeSet<>();
 //		s.add(new Matchs("li",7));
-		s1.add(new Matchs("ni",10));
-		s1.add(new Matchs("s",99));
+//		s1.add(new Matchs("ni",10));
+//		s1.add(new Matchs("s",99));
 //		s.add(new Matchs("li",9));
 //		s.add(new Matchs("li",6));
 //		s.add(new Matchs("ni",5));
 //		s.add(new Matchs("s",48));
-		Integer i = null;
-		set(i);
-		System.err.println(i);
+//		Integer i = null;
+//		set(i);
+//		System.err.println(i);
+		Map<User, String> map = new HashMap<User, String>();
+		User u = new User("liu", 25);
+		User u1 = new User("liu", 25);
+		map.put(u, "30");
+		System.err.println(map.get(u1));
+		
 	}
 	
 	public static void set(int i){

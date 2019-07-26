@@ -1,0 +1,14 @@
+一、小程序组件
+	1.用外部样式，要在component 中涌入样式
+		/* 组件 custom-component.js */
+			Component({
+			  externalClasses: ['my-class']
+			})
+	2.使用js 接受外部样式 
+		/* 组件 custom-component.js */
+		Component({
+				  options: {
+				    addGlobalClass: true,
+				  }
+				})
+	

@@ -1,0 +1,8 @@
+一、小程序 创建动画
+	1.通过css动画和css渐变 来创建动画 
+	2.一下几个函数 监听动画事件：
+		transitionend : 监听渐变结束
+		animationstar： 监听动画开始 
+		animationend :  监听动画结束 。
+		animationiteration ： 监听动画一个阶段
+		
